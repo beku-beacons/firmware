@@ -1,0 +1,15 @@
+export dim device_name(16)
+
+export procedure init_device_name()
+    device_name(0:16) = "     BLED112    "
+end
+
+# Display CS is P1.6
+export const display_cs_port = 1
+export const display_cs_pin = $40
+
+# Display RS is P1.1
+export const display_rs_port = 1
+export const display_rs_pin = $2
+
+import "../common.bgs"
